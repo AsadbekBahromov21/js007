@@ -1,0 +1,20 @@
+.hero{
+    width: 100%;
+    background: url(../../images/hero.png)no-repeat center/cover;
+    height: 278px;
+    &__wrapper{
+        display: flex;
+        padding-top: 48px;
+        margin-bottom: 64px;
+        gap: 5px;
+        p{
+            font-size: 11px;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+    &__p{
+        font-size: 44px;
+        color: #fff;
+    }
+}

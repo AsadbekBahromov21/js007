@@ -1,0 +1,168 @@
+.content{
+    &__wrapper{
+        display: flex;
+    }
+    &__box{
+        width: 50%;
+        padding-top: 52px;
+        margin-bottom: 160px;
+        background: #F57520;
+        padding-bottom: 30px;
+        p{
+            max-width: 600px;
+          font-size: 48px;
+          color: #fff;
+          margin-bottom: 32px;
+        }
+    }
+    &__desc{
+        width: 50%;
+       img{
+        height: 492px;
+       }
+
+    }
+    &__block{
+      button{
+        padding: 10px 234px;
+        border: none;
+        background: #fff;
+        border-radius: 10px;
+      }
+    }
+    &__inp{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 16px;
+        input{
+            padding: 10px 100px 10px 16px ;
+            border-radius: 10px;
+            background: #fff;
+            border: none;
+            outline: none;
+        }
+    }
+    &__cofwena{
+        padding: 10px 388px 80px 16px;
+        border: none;
+        border-radius: 10px;
+        background: #fff;
+        margin-bottom: 16px;
+    
+    }
+}
+@media (max-width:1260px) {
+    .content{
+        &__block{
+          button{
+            padding: 10px 202px;
+            border: none;
+            background: #fff;
+            border-radius: 10px;
+          }
+        }
+        &__inp{
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            input{
+                padding: 10px 66px 10px 16px ;
+            }
+        }
+        &__cofwena{
+            padding: 10px 324px 80px 16px;
+        
+        }
+    }
+    
+}
+@media (max-width:1230px) {
+    .content{
+        &__desc{
+            display: none;
+        }
+        &__box{
+            width: 100%;
+            p{
+                display: flex;
+               margin: auto;
+            }
+           
+        }
+        &__block{
+            display: flex;
+            margin: auto;
+            width: 500px;
+        }
+    }
+    
+}
+@media (max-width:550px) {
+    .content{
+        &__box{
+            width:100%;
+            overflow: hidden;
+            p{
+                max-width: 400px;
+                font-size: 30px;
+            }
+        }
+        &__block{
+            display: flex;
+            button{
+              padding: 10px 150px;
+              
+            }
+          }
+          &__inp{
+              display: flex;
+              flex-wrap: wrap;
+              input{
+                  padding: 10px 35px 10px 16px ;
+                  font-size: 12px;
+              }
+          }
+          &__cofwena{
+              padding: 10px 239px 80px 16px;
+              font-size: 12px;
+          
+          }
+       
+    }
+    
+}
+@media (max-width:440px) {
+    .content{
+        &__box{
+            width:100%;
+            overflow: hidden;
+            p{
+                max-width: 400px;
+                font-size: 30px;
+            }
+        }
+        &__block{
+            display: flex;
+            button{
+            max-width: 320px;
+              padding: 10px 113px;
+            }
+          }
+          &__inp{
+              display: flex;
+             flex-direction: column;
+              input{
+                 max-width: 320px;
+                  font-size: 12px;
+              }
+          }
+          &__cofwena{
+             max-width: 320px;
+              font-size: 12px;
+          
+          }
+       
+    }
+    
+}
