@@ -246,41 +246,177 @@ $('.owl-carousel').owlCarousel({
 //     console.log(yil(2020, 11));
 // }
 
-{
-    // case 10 masala
-    function robot(commands) {
-        let sum = [0, 0];
-        let andsum = 0; 
+// {
+//     // case 10 masala
+//     function robot(commands) {
+//         let sum = [0, 0];
+//         let andsum = 0; 
 
-        for (let command of commands) {
-            switch (command) {
-                case 's':
-                    sum[1]++;
-                    break;
-                case 'j':
-                    sum[1]--;
-                    break;
-                case 'q':
-                    sum[0]++;
-                    break;
-                case 'g':
-                    sum[0]--;
-                    break;
-                case '1':
-                    andsum = (andsum + 3) % 4;
-                    break;
-                case '2':
-                    andsum = (andsum + 1) % 4;
-                    break;
-                case '0':
-                    if (andsum === 0) sum[1]++;
-                    else if (andsum === 1) sum[0]++;
-                    else if (andsum === 2) sum[1]--;
-                    else if (andsum === 3) sum[0]--;
-                    break;
+//         for (let command of commands) {
+//             switch (command) {
+//                 case 's':
+//                     sum[1]++;
+//                     break;
+//                 case 'j':
+//                     sum[1]--;
+//                     break;
+//                 case 'q':
+//                     sum[0]++;
+//                     break;
+//                 case 'g':
+//                     sum[0]--;
+//                     break;
+//                 case '1':
+//                     andsum = (andsum + 3) % 4;
+//                     break;
+//                 case '2':
+//                     andsum = (andsum + 1) % 4;
+//                     break;
+//                 case '0':
+//                     if (andsum === 0) sum[1]++;
+//                     else if (andsum === 1) sum[0]++;
+//                     else if (andsum === 2) sum[1]--;
+//                     else if (andsum === 3) sum[0]--;
+//                     break;
+//             }
+//         }
+//         return sum;
+//     }
+//     console.log(robot(['s', 's', '2', 'q', '0']));
+// }
+
+
+// {
+//         // for 1 masala
+//         function number( k, n ) {
+//             if ( n > 0) {
+//                 for (let i = 0; i < n; i++) {
+//                 console.log(k);
+//                 }
+//             } else {
+//                 return  " n soni musbat bo'lishi kerak"
+//             }
+//         }
+    
+//         console.log( number(3, -1) );
+//     }
+
+
+// {
+//     // for 2 masla
+//     function son(a, b){
+//         if(a < b){
+//             for(let i = a; i <= b; i++ ){
+//                 console.log(i);
+//             }
+//         }else{
+//             return "a soni b dan kichik bolishi kere"
+//         }
+//     }
+//    console.log(son(3, 7));
+// }
+// {
+//     // for 3 masla
+//     function son(a, b){
+//         if(a  < b){
+//             for(let i = b -= 1; i > a; i--){
+//                 console.log(i);
+//             }
+//         }else{
+//             return " a soni b sonidan kichik bolishi kere"
+//         }
+//     }
+//     console.log(son(2, 6));
+// }
+// {
+//     // for 4 masala
+//     function son(a){
+//         for(let i = 1; i <= 10; i++){
+//             // console.log(i);
+//             console.log(a * i);
+//         }
+//     }
+//     console.log(son(10000));
+// }
+// {
+//     // for 5 masala
+//     function son(a){
+//         for(let i = 0; i < 1; i += 0.1){
+//             console.log(a * i);
+//         }
+//         return "bunday kg yoq"
+//     }
+//     console.log(son(10000));
+// }
+// {
+//     // for6
+//     function son( a ) {
+//         for (let i = 1; i <= 2; i += 0.2) {
+//             console.log( i * a);
+//         }
+//     }
+//     console.log( chocolate(1000) );
+// }
+// {
+//     // for7
+//     function sum( a, b ) {
+//         let sum = 0
+//         if ( a < b ) {
+//             for (let i = a; i < b; i++) {
+//                 sum = sum + i
+//             }
+//         } else {
+//             return "a soni b sonidan kichik bo'lishi kerak"
+//         }
+//         console.log(sum);
+//     }
+//     console.log( son( 2, 7 ) );
+// }
+// {
+//         // for 8 masala
+//         function son( a, b ) {
+//             let sum = 1
+//             if ( a < b) {
+//                 for (let i = a; i < b; i++) {
+//                     sum = sum * i
+//                 }
+//             } else {
+//                 return "a soni b sonidan kichik bo'lishi kerak"
+//             }
+//             console.log( sum);
+//         }
+    
+//         console.log( son(2, 7) );
+// }
+
+// {
+//     // for 9 masla
+//     function son( a, b) {
+//         let sum = 0
+//         if ( a < b) {
+//             for (let i = a; i < b; i++) {
+//                 sum = sum + (i * i)
+//             }
+//         } else {
+//             return "a soni b sonidan kichik bo'lishi kerak"
+//         }
+//         console.log(a , b,sum );
+//     }
+//     console.log( son(3, 7) );
+// }
+
+{
+        // for 10 masala
+        function son(n) {
+            let sum = 0
+            if ( n > 0 ) {
+                for (let i = 1; i <= n; i++) {
+                    sum = i/n + sum
+                }
+            } else {
+                return "n soni 0 dan kichik bo'lishi mumkin emas"
             }
+            console.log(sum);
         }
-        return sum;
-    }
-    console.log(robot(['s', 's', '2', 'q', '0']));
+        console.log( son(5) );
 }
