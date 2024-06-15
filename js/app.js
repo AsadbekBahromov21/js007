@@ -204,3 +204,83 @@ $('.owl-carousel').owlCarousel({
 //     console.log(ogirlik(2, 4));
 // }
 
+// {
+//     // case 8 masala
+//     function yil(year){
+//         return(year % 4 === 0 &&  year % 100 !== 0) || year % 400 === 0;
+//     }
+//     function andyil(year){
+//         return yil(year) ? 366 : 365;
+//     }
+//     console.log(andyil(2020));
+// }
+
+// {
+//     // case 9 masala
+//     function yil(year, moon) {
+//         let sum;
+//         switch (moon) {
+//             case 1:
+//             case 3:
+//             case 5:
+//             case 7:
+//             case 8:
+//             case 10:
+//             case 12:
+//                 sum = 31;
+//                 break;
+//             case 4:
+//             case 6:
+//             case 9:
+//             case 11:
+//                 sum = 30;
+//                 break;
+//             case 2:
+//                 sum = isLeapyear(year) ? 29 : 28;
+//                 break;
+//             default:
+//                 sum = "bunday javob yoq";
+//         }
+//         return sum
+//     }
+//     console.log(yil(2020, 11));
+// }
+
+{
+    // case 10 masala
+    function robot(commands) {
+        let sum = [0, 0];
+        let andsum = 0; 
+
+        for (let command of commands) {
+            switch (command) {
+                case 's':
+                    sum[1]++;
+                    break;
+                case 'j':
+                    sum[1]--;
+                    break;
+                case 'q':
+                    sum[0]++;
+                    break;
+                case 'g':
+                    sum[0]--;
+                    break;
+                case '1':
+                    andsum = (andsum + 3) % 4;
+                    break;
+                case '2':
+                    andsum = (andsum + 1) % 4;
+                    break;
+                case '0':
+                    if (andsum === 0) sum[1]++;
+                    else if (andsum === 1) sum[0]++;
+                    else if (andsum === 2) sum[1]--;
+                    else if (andsum === 3) sum[0]--;
+                    break;
+            }
+        }
+        return sum;
+    }
+    console.log(robot(['s', 's', '2', 'q', '0']));
+}
